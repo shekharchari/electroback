@@ -1202,4 +1202,40 @@ img {
     .whatsapp-tooltip {
         display: none;
     }
+
+/* Mobile Hero Layout */
+@media (max-width: 768px) {
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-image {
+        order: -1;
+        width: 100%;
+    }
+
+    .image-wrapper img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .trust-badges {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
 }
